@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateWeaponFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dialog_padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_create_weapon"
+            android:textSize="@dimen/val_label_size"
+            android:textAlignment="center" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/padding16">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/editObjectFragmentStyle"
+                    android:text="@string/weapon_name" />
+
+                <EditText
+                    android:id="@+id/dialog_field_weapon_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="textCapWords" />
+
+                <TextView
+                    style="@style/editObjectFragmentStyle"
+                    android:text="@string/weapon_quality" />
+
+                <Spinner
+                    android:id="@+id/fragment_spinner_quality"
+                    android:entries="@array/weapon_quality"
+                    android:layout_marginTop="@dimen/row_padding"
+                    android:paddingTop="@dimen/row_padding"
+                    android:paddingBottom="@dimen/row_padding"
+                    style="@style/spinnerMainStyle" />
+
+                <TextView
+                    style="@style/editObjectFragmentStyle"
+                    android:text="@string/weapon_type" />
+
+                <Spinner
+                    android:id="@+id/fragment_spinner_type"
+                    android:entries="@array/weapon_type"
+                    android:layout_marginTop="@dimen/row_padding"
+                    android:paddingTop="@dimen/row_padding"
+                    android:paddingBottom="@dimen/row_padding"
+                    style="@style/spinnerMainStyle" />
+
+                <TextView
+                    style="@style/editObjectFragmentStyle"
+                    android:text="@string/weapon_physic_damage" />
+
+                <EditText
+                    android:id="@+id/dialog_field_weapon_physic_damage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <TextView
+                    style="@style/editObjectFragmentStyle"
+                    android:text="@string/weapon_magic_damage" />
+
+                <EditText
+                    android:id="@+id/dialog_field_weapon_magic_damage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <TableRow
+                    android:gravity="right"
+                    android:paddingTop="@dimen/padding16"
+                    android:paddingBottom="@dimen/padding16">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:id="@+id/btn_cancel"
+                        android:drawableLeft="@drawable/ic_baseline_cancel_24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/btn_cancel"
+                        android:layout_marginRight="@dimen/row_padding"
+                        android:layout_weight="0.5" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:id="@+id/btn_save"
+                        android:drawableLeft="@drawable/ic_baseline_save_24"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/btn_save"
+                        android:layout_marginLeft="@dimen/row_padding"
+                        android:layout_weight="0.5" />
+                </TableRow>
+            </TableLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

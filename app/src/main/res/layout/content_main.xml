@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/btn_edit_objects"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="@string/edit_game_object"
+                android:onClick="buttonOnClick" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/btn_start_battle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:onClick="buttonOnClick"
+                android:text="@string/btn_start" />
+        </TableRow>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow android:padding="@dimen/padding16">
+
+                    <TextView
+                        android:text="@string/choose_character_one"
+                        style="@style/textViewStyle"
+                        android:gravity="center"
+                        android:textSize="@dimen/val_label_size" />
+                </TableRow>
+
+                <TableRow android:padding="@dimen/row_padding">
+
+                    <Spinner
+                        android:id="@+id/choose_player_one"
+                        style="@style/spinnerMainStyle" />
+                </TableRow>
+
+                <TableRow android:padding="@dimen/row_padding">
+
+                    <TextView
+                        android:text="@string/player_name"
+                        style="@style/textViewStyle" />
+
+                    <TextView
+                        android:id="@+id/val_player_name_one"
+                        style="@style/valTextViewStyle" />
+
+                </TableRow>
+
+                <TableRow android:padding="@dimen/row_padding">
+
+                    <TextView
+                        android:text="@string/player_health"
+                        style="@style/textViewStyle" />
+
+                    <TextView
+                        android:id="@+id/val_player_health_one"
+                        style="@style/valTextViewStyle" />
+
+                </TableRow>
+
+                <TableRow android:padding="@dimen/row_padding">
+
+                    <TextView
+                        android:text="@string/player_attack"
+                        style="@style/textViewStyle" />
+
+                    <TextView
+                        android:id="@+id/val_player_attack_one"
+                        style="@style/valTextViewStyle" />
+                </TableRow>
+
+                <TableRow android:padding="@dimen/row_padding">
+
+                    <TextView
+                        android:text="@string/player_magic"
+                        style="@style/textViewStyle" />
+
+                    <TextView
+                        android:id="@+id/val_player_magic_one"
+                        style="@style/valTextViewStyle" />
+                </TableRow>
+
+                <TableRow android:padding="@dimen/padding16">
+
+                    <TextView
+                        android:text="@string/choose_weapon_one"
+                        style="@style/textViewStyle"
+                        android:gravity="center"
+                        android:textSize="@dimen/val_label_size" />
+
+                </TableRow>
+
+                <TableRow android:padding="@dimen/row_padding">
+
+                    <Spinner
+                        android:id="@+id/choose_weapon_one"
+                        style="@style/spinnerMainStyle" />
+                </TableRow>
+
+                <TableRow android:padding="@dimen/row_padding">
+
+                    <TextView
+                        android:text="@string/weapon_name"
+                        style="@style/textViewStyle" />
+
+                    <TextView
+                        android:id="@+id/val_weapon_name_one"
+                        style="@style/valTextViewStyle" />
+                </TableRow>
+
+                <TableRow android:padding="@dimen/row_padding">
+
+                    <TextView
+                        android:text="@string/weapon_type"
+                        style="@style/textViewStyle" />
+
+                    <TextView
+                        android:id="@+id/val_weapon_type_one"
+                        style="@style/valTextViewStyle" />
+                </TableRow>
+
+                <TableRow android:padding="@dimen/row_padding">
+
+                    <TextView
+                        android:text="@string/weapon_quality"
+                        style="@style/textViewStyle" />
+
+                    <TextView
+                        android:id="@+id/val_weapon_quality_one"
+                        style="@style/valTextViewStyle" />
+                </TableRow>
+
+                <TableRow android:padding="@dimen/row_padding">
+
+                    <TextView
+                        android:text="@string/weapon_physic_damage"
+                        style="@style/textViewStyle" />
+
+                    <TextView
+                        android:id="@+id/val_weapon_physic_damage_one"
+                        style="@style/valTextViewStyle" />
+                </TableRow>
+
+                <TableRow android:padding="@dimen/row_padding">
+
+                    <TextView
+                        android:text="@string/weapon_magic_damage"
+                        style="@style/textViewStyle" />
+
+                    <TextView
+                        android:id="@+id/val_weapon_magic_damage_one"
+                        style="@style/valTextViewStyle" />
+                </TableRow>
+
+                <TableRow android:padding="@dimen/padding16">
+
+                    <TextView
+                        android:text="@string/choose_character_two"
+                        style="@style/textViewStyle"
+                        android:gravity="center"
+                        android:textSize="@dimen/val_label_size" />
+                </TableRow>
+
+                <TableRow android:padding="@dimen/row_padding">
+
+                    <Spinner
+                        android:id="@+id/choose_player_two"
+                        style="@style/spinnerMainStyle" />
+                </TableRow>
+
+                <TableRow android:padding="@dimen/row_padding">
+
+                    <TextView
+                        android:text="@string/player_name"
+                        style="@style/textViewStyle" />
+
+                    <TextView
+                        android:id="@+id/val_player_name_two"
+                        style="@style/valTextViewStyle" />
+                </TableRow>
+
+                <TableRow android:padding="@dimen/row_padding">
+
+                    <TextView
+                        android:text="@string/player_health"
+                        style="@style/textViewStyle" />
+
+                    <TextView
+                        android:id="@+id/val_player_health_two"
+                        style="@style/valTextViewStyle" />
+                </TableRow>
+
+                <TableRow android:padding="@dimen/row_padding">
+
+                    <TextView
+                        android:text="@string/player_attack"
+                        style="@style/textViewStyle" />
+
+                    <TextView
+                        android:id="@+id/val_player_attack_two"
+                        style="@style/valTextViewStyle" />
+                </TableRow>
+
+                <TableRow android:padding="@dimen/row_padding">
+
+                    <TextView
+                        android:text="@string/player_magic"
+                        style="@style/textViewStyle" />
+
+                    <TextView
+                        android:id="@+id/val_player_magic_two"
+                        style="@style/valTextViewStyle" />
+                </TableRow>
+
+                <TableRow android:padding="@dimen/padding16">
+
+                    <TextView
+                        android:text="@string/choose_weapon_two"
+                        style="@style/textViewStyle"
+                        android:gravity="center"
+                        android:textSize="@dimen/val_label_size" />
+                </TableRow>
+
+                <TableRow android:padding="@dimen/row_padding">
+
+                    <Spinner
+                        android:id="@+id/choose_weapon_two"
+                        style="@style/spinnerMainStyle" />
+                </TableRow>
+
+                <TableRow android:padding="@dimen/row_padding">
+
+                    <TextView
+                        android:text="@string/weapon_name"
+                        style="@style/textViewStyle" />
+
+                    <TextView
+                        android:id="@+id/val_weapon_name_two"
+                        style="@style/valTextViewStyle" />
+                </TableRow>
+
+                <TableRow android:padding="@dimen/row_padding">
+
+                    <TextView
+                        android:text="@string/weapon_type"
+                        style="@style/textViewStyle" />
+
+                    <TextView
+                        android:id="@+id/val_weapon_type_two"
+                        style="@style/valTextViewStyle" />
+                </TableRow>
+
+                <TableRow android:padding="@dimen/row_padding">
+
+                    <TextView
+                        android:text="@string/weapon_quality"
+                        style="@style/textViewStyle" />
+
+                    <TextView
+                        android:id="@+id/val_weapon_quality_two"
+                        style="@style/valTextViewStyle" />
+                </TableRow>
+
+                <TableRow android:padding="@dimen/row_padding">
+
+                    <TextView
+                        android:text="@string/weapon_physic_damage"
+                        style="@style/textViewStyle" />
+
+                    <TextView
+                        android:id="@+id/val_weapon_physic_damage_two"
+                        style="@style/valTextViewStyle" />
+                </TableRow>
+
+                <TableRow android:padding="@dimen/row_padding">
+
+                    <TextView
+                        android:text="@string/weapon_magic_damage"
+                        style="@style/textViewStyle" />
+
+                    <TextView
+                        android:id="@+id/val_weapon_magic_damage_two"
+                        style="@style/valTextViewStyle" />
+                </TableRow>
+            </TableLayout>
+        </ScrollView>
+    </TableLayout>
+</merge>

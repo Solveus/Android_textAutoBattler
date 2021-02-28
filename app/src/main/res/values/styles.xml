@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="textViewStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.55</item>
+        <item name="android:textSize">@dimen/label_size</item>
+    </style>
+
+    <style name="valTextViewStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.45</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">@dimen/val_label_size</item>
+        <item name="android:text">@string/null_value</item>
+        <item name="android:textColor">@color/purple</item>
+    </style>
+
+    <style name="spinnerMainStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="editObjectFragmentStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">@dimen/label_size</item>
+    </style>
+</resources>
+

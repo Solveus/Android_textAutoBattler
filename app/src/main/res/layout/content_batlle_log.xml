@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:paddingTop="@dimen/row_padding"
+            android:paddingBottom="@dimen/row_padding">
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/btn_clear_log"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+
+                android:text="@string/btn_clear_log"
+                android:onClick="buttonClick" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/btn_skip_log"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+
+                android:text="@string/btn_skip_log"
+                android:onClick="buttonClick" />
+        </TableRow>
+    </TableLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/row_padding">
+
+        <EditText
+            android:id="@+id/textAreaLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text|textMultiLine"
+            android:textStyle="bold" />
+    </ScrollView>
+</merge>

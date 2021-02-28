@@ -1,0 +1,30 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory app:title="@string/application_header">
+        <SwitchPreferenceCompat
+            app:key="theme"
+            app:title="@string/dark_theme_title"
+            app:icon="@drawable/ic_baseline_app_settings_alt_24" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/battle_log_header">
+        <SwitchPreferenceCompat
+            app:key="skipLog"
+            app:title="@string/btn_skip_log"
+            app:icon="@drawable/ic_baseline_skip_next_24"
+            android:summaryOn="@string/skipLog_summary_on"
+            android:summaryOff="@string/skipLog_summary_off" />
+
+        <ListPreference
+            app:defaultValue="18"
+            app:entries="@array/size_values"
+            app:entryValues="@array/size_values"
+            app:key="font"
+            app:title="@string/font_size_title"
+            app:useSimpleSummaryProvider="true"
+            app:icon="@drawable/ic_baseline_format_size_24" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

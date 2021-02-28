@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CreateCharacterFragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/dialog_padding">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_create_character"
+        android:textSize="@dimen/val_label_size"
+        android:textAlignment="center" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/padding16"
+        android:layout_marginTop="@dimen/dialog_padding">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/editObjectFragmentStyle"
+                android:text="@string/player_name" />
+
+            <EditText
+                android:id="@+id/dialog_field_player_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="textCapWords"
+                android:autofillHints="@string/input_text" />
+
+            <TextView
+                style="@style/editObjectFragmentStyle"
+                android:text="@string/player_health" />
+
+            <EditText
+                android:id="@+id/dialog_field_player_health"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:autofillHints="@string/input_int" />
+
+            <TextView
+                style="@style/editObjectFragmentStyle"
+                android:text="@string/player_attack" />
+
+            <EditText
+                android:id="@+id/dialog_field_player_physic_damage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:autofillHints="@string/input_int" />
+
+            <TextView
+                style="@style/editObjectFragmentStyle"
+                android:text="@string/player_magic" />
+
+            <EditText
+                android:id="@+id/dialog_field_player_magic_damage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:autofillHints="@string/input_int" />
+
+            <TableRow
+                android:gravity="right"
+                android:paddingTop="@dimen/padding16"
+                android:paddingBottom="@dimen/padding16">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:id="@+id/btn_cancel"
+                    android:drawableLeft="@drawable/ic_baseline_cancel_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_cancel"
+                    android:layout_marginEnd="@dimen/row_padding"
+                    android:layout_weight="0.5" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:id="@+id/btn_save"
+                    android:drawableLeft="@drawable/ic_baseline_save_24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_save"
+                    android:layout_marginStart="@dimen/row_padding"
+                    android:layout_weight="0.5" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</FrameLayout>

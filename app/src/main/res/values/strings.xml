@@ -1,0 +1,65 @@
+<resources>
+
+
+    <string name="app_name">Text auto-battler</string>
+    <string name="toolbar_settings_title">App settings</string>
+    <string name="toolbar_main_title">Choose your fighters!</string>
+    <string name="toolbar_battlelog_title">Battle!</string>
+
+    <!-- Toolbar menu-->
+    <string name="action_settings">Settings</string>
+    <string name="action_create_character">Create new character</string>
+    <string name="action_delete_character">Delete character</string>
+    <string name="action_create_weapon">Create new weapon</string>
+    <string name="action_delete_weapon">Delete weapon</string>
+
+    <!-- Text auto-battler strings-->
+    <string name="choose_character_one">Select first character:</string>
+    <string name="choose_character_two">Select second character:</string>
+    <string name="choose_weapon_one">Select weapon player\'s one:</string>
+    <string name="choose_weapon_two">Select player\'s two:</string>
+    <string name="weapon_name">Weapon name:</string>
+    <string name="weapon_quality">Weapon quality:</string>
+    <string name="weapon_type">Weapon type:</string>
+    <string name="weapon_physic_damage">Weapon physic damage:</string>
+    <string name="weapon_magic_damage">Weapon magic damage:</string>
+    <string name="player_name">Player name:</string>
+    <string name="player_health">Player health:</string>
+    <string name="player_attack">Player physic damage:</string>
+    <string name="player_magic">Player magic damage:</string>
+    <string name="null_value">null</string>
+    <string name="spinner_player_prompt">Select character</string>
+    <string name="spinner_weapon_prompt">Select weapon</string>
+
+    <!-- buttons-->
+    <string name="btn_start">Start battle!</string>
+    <string name="btn_clear_log">Clear log</string>
+    <string name="btn_back">Back</string>
+
+    <!-- Sync Preferences -->
+    <string name="skipLog_summary_on">Skip log enable</string>
+    <string name="skipLog_summary_off">Skip log disable</string>
+    <string name="about">About</string>
+    <string name="edit_game_object">Edit character/weapon</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="title_create_character">Create new character</string>
+    <string name="title_create_weapon">Create new weapon</string>
+    <string name="input_int">Input number</string>
+    <string name="input_text">Input text</string>
+    <string name="title_delete_character">Delete character</string>
+    <string name="select_character">Please, select character</string>
+    <string name="title_delete_character_temp">Delete last character</string>
+    <string name="title_delete_weapon">Delete weapon</string>
+    <string name="select_weapon">Please, select weapon</string>
+    <string name="btn_skip_log">Skip log</string>
+    <string name="application_header">Application</string>
+    <string name="dark_theme_title">Dark Theme</string>
+    <string name="battle_log_header">Battle log</string>
+    <string name="font_size_title">Font size</string>
+    <string name="delay">Delay in log output</string>
+    <string name="delay_label">Delay</string>
+    <string name="about_content">Author: solveus_666 (Solveus)</string>
+    <string name="github_link">https://github.com/Solveus</string>
+
+</resources>

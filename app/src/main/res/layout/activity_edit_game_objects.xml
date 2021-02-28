@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".EditGameObjects"
+    android:paddingTop="@dimen/row_padding">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/characters" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/btn_create_character"
+            android:text="@string/action_create_character"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="buttonClick" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/btn_delete_character"
+            android:text="@string/action_delete_character"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="buttonClick" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:src="@drawable/weapon" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/btn_create_weapon"
+            android:text="@string/action_create_weapon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="buttonClick" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/btn_delete_weapon"
+            android:text="@string/action_delete_weapon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="buttonClick" />
+
+    </LinearLayout>
+</ScrollView>
+

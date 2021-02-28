@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DeleteWeaponFragment"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/dialog_padding">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_delete_weapon"
+        android:textSize="@dimen/val_label_size"
+        android:textAlignment="center" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/padding16"
+        android:layout_marginTop="@dimen/dialog_padding">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:paddingTop="@dimen/padding16"
+                android:paddingBottom="@dimen/padding16">
+
+                <TextView
+                    style="@style/editObjectFragmentStyle"
+                    android:text="@string/select_weapon" />
+            </TableRow>
+
+            <TableRow
+                android:paddingTop="@dimen/padding16"
+                android:paddingBottom="@dimen/padding16">
+
+                <Spinner
+                    android:padding="@dimen/row_padding"
+                    android:id="@+id/spinner_delete_weapon"
+                    style="@style/spinnerMainStyle" />
+            </TableRow>
+
+            <TableRow
+                android:gravity="right"
+                android:paddingTop="@dimen/padding16"
+                android:paddingBottom="@dimen/padding16"
+                tools:ignore="RtlHardcoded">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/row_padding"
+                    android:layout_weight="0.5"
+                    android:drawableLeft="@drawable/ic_baseline_cancel_24"
+                    android:text="@string/btn_cancel" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:id="@+id/btn_save"
+                    android:drawableLeft="@drawable/ic_baseline_save_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_save"
+                    android:layout_marginStart="@dimen/row_padding"
+                    android:layout_weight="0.5" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</FrameLayout>

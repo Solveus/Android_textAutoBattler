@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AboutFragment"
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/dialog_padding">
+
+    <TableLayout
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dialog_padding">
+
+        <TableRow>
+
+            <TextView
+                android:paddingBottom="@dimen/padding16"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:text="@string/about"
+                android:textSize="@dimen/val_label_size"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+
+            <TextView
+                style="@style/textViewStyle"
+                android:layout_weight="1"
+                android:text="@string/about_content" />
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+
+            <TextView
+                style="@style/textViewStyle"
+                android:layout_weight="1"
+                android:paddingTop="@dimen/padding16"
+                android:autoLink="web"
+                android:text="@string/github_link" />
+        </TableRow>
+    </TableLayout>
+</FrameLayout>
