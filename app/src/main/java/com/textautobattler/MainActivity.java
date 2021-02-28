@@ -168,23 +168,20 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void initUI() {
-        valPlayerNameOne = (TextView) findViewById(R.id.val_player_name_one);
+
         valPlayerHealthOne = (TextView) findViewById(R.id.val_player_health_one);
         valPlayerAttackOne = (TextView) findViewById(R.id.val_player_attack_one);
         valPlayerMagicOne = (TextView) findViewById(R.id.val_player_magic_one);
 
-        valWeaponNameOne = (TextView) findViewById(R.id.val_weapon_name_one);
         valWeaponTypeOne = (TextView) findViewById(R.id.val_weapon_type_one);
         valWeaponQualityOne = (TextView) findViewById(R.id.val_weapon_quality_one);
         valWeaponPhysicDamageOne = (TextView) findViewById(R.id.val_weapon_physic_damage_one);
         valWeaponMagicDamageOne = (TextView) findViewById(R.id.val_weapon_magic_damage_one);
 
-        valPlayerNameTwo = (TextView) findViewById(R.id.val_player_name_two);
         valPlayerHealthTwo = (TextView) findViewById(R.id.val_player_health_two);
         valPlayerAttackTwo = (TextView) findViewById(R.id.val_player_attack_two);
         valPlayerMagicTwo = (TextView) findViewById(R.id.val_player_magic_two);
 
-        valWeaponNameTwo = (TextView) findViewById(R.id.val_weapon_name_two);
         valWeaponTypeTwo = (TextView) findViewById(R.id.val_weapon_type_two);
         valWeaponQualityTwo = (TextView) findViewById(R.id.val_weapon_quality_two);
         valWeaponPhysicDamageTwo = (TextView) findViewById(R.id.val_weapon_physic_damage_two);
@@ -214,7 +211,6 @@ public class MainActivity extends AppCompatActivity {
                         case R.id.choose_player_one:
                             GameCharacter characterOne = game.getGameCharacterList().get(position);
 
-                            valPlayerNameOne.setText(characterOne.getName());
                             valPlayerHealthOne.setText(valueOf(characterOne.getMaxHealth()));
                             valPlayerAttackOne.setText(valueOf(characterOne.getAttackPower()));
                             valPlayerMagicOne.setText(valueOf(characterOne.getMagicPower()));
@@ -224,7 +220,6 @@ public class MainActivity extends AppCompatActivity {
                         case R.id.choose_player_two:
                             GameCharacter characterTwo = game.getGameCharacterList().get(position);
 
-                            valPlayerNameTwo.setText(characterTwo.getName());
                             valPlayerHealthTwo.setText(valueOf(characterTwo.getMaxHealth()));
                             valPlayerAttackTwo.setText(valueOf(characterTwo.getAttackPower()));
                             valPlayerMagicTwo.setText(valueOf(characterTwo.getMagicPower()));
@@ -251,7 +246,6 @@ public class MainActivity extends AppCompatActivity {
                         case R.id.choose_weapon_one:
                             Weapon weaponOne = game.getWeaponList().get(position);
 
-                            valWeaponNameOne.setText(weaponOne.getName());
                             valWeaponQualityOne.setText(valueOf(weaponOne.getQuality()));
                             valWeaponTypeOne.setText(valueOf(weaponOne.getType()));
                             valWeaponPhysicDamageOne.setText(valueOf(weaponOne.getPhysicDamage()));
@@ -261,7 +255,6 @@ public class MainActivity extends AppCompatActivity {
                         case R.id.choose_weapon_two:
                             Weapon weaponTwo = game.getWeaponList().get(position);
 
-                            valWeaponNameTwo.setText(weaponTwo.getName());
                             valWeaponQualityTwo.setText(valueOf(weaponTwo.getQuality()));
                             valWeaponTypeTwo.setText(valueOf(weaponTwo.getType()));
                             valWeaponPhysicDamageTwo.setText(valueOf(weaponTwo.getPhysicDamage()));

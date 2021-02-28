@@ -54,18 +54,6 @@
                 <TableRow android:padding="@dimen/row_padding">
 
                     <TextView
-                        android:text="@string/player_name"
-                        style="@style/textViewStyle" />
-
-                    <TextView
-                        android:id="@+id/val_player_name_one"
-                        style="@style/valTextViewStyle" />
-
-                </TableRow>
-
-                <TableRow android:padding="@dimen/row_padding">
-
-                    <TextView
                         android:text="@string/player_health"
                         style="@style/textViewStyle" />
 
@@ -107,25 +95,18 @@
 
                 </TableRow>
 
-                <TableRow android:padding="@dimen/row_padding">
+                <TableRow
+                    android:padding="@dimen/row_padding"
+                    android:layout_marginLeft="@dimen/padding16">
 
                     <Spinner
                         android:id="@+id/choose_weapon_one"
                         style="@style/spinnerMainStyle" />
                 </TableRow>
 
-                <TableRow android:padding="@dimen/row_padding">
-
-                    <TextView
-                        android:text="@string/weapon_name"
-                        style="@style/textViewStyle" />
-
-                    <TextView
-                        android:id="@+id/val_weapon_name_one"
-                        style="@style/valTextViewStyle" />
-                </TableRow>
-
-                <TableRow android:padding="@dimen/row_padding">
+                <TableRow
+                    android:padding="@dimen/row_padding"
+                    android:layout_marginLeft="@dimen/padding16">
 
                     <TextView
                         android:text="@string/weapon_type"
@@ -136,7 +117,9 @@
                         style="@style/valTextViewStyle" />
                 </TableRow>
 
-                <TableRow android:padding="@dimen/row_padding">
+                <TableRow
+                    android:padding="@dimen/row_padding"
+                    android:layout_marginLeft="@dimen/padding16">
 
                     <TextView
                         android:text="@string/weapon_quality"
@@ -147,7 +130,9 @@
                         style="@style/valTextViewStyle" />
                 </TableRow>
 
-                <TableRow android:padding="@dimen/row_padding">
+                <TableRow
+                    android:padding="@dimen/row_padding"
+                    android:layout_marginLeft="@dimen/padding16">
 
                     <TextView
                         android:text="@string/weapon_physic_damage"
@@ -158,7 +143,9 @@
                         style="@style/valTextViewStyle" />
                 </TableRow>
 
-                <TableRow android:padding="@dimen/row_padding">
+                <TableRow
+                    android:padding="@dimen/row_padding"
+                    android:layout_marginLeft="@dimen/padding16">
 
                     <TextView
                         android:text="@string/weapon_magic_damage"
@@ -169,7 +156,15 @@
                         style="@style/valTextViewStyle" />
                 </TableRow>
 
-                <TableRow android:padding="@dimen/padding16">
+                <View
+                    android:layout_margin="@dimen/row_padding"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#c0c0c0" />
+
+                <TableRow
+                    android:padding="@dimen/padding16"
+                    android:layout_marginLeft="@dimen/padding16">
 
                     <TextView
                         android:text="@string/choose_character_two"
@@ -185,16 +180,6 @@
                         style="@style/spinnerMainStyle" />
                 </TableRow>
 
-                <TableRow android:padding="@dimen/row_padding">
-
-                    <TextView
-                        android:text="@string/player_name"
-                        style="@style/textViewStyle" />
-
-                    <TextView
-                        android:id="@+id/val_player_name_two"
-                        style="@style/valTextViewStyle" />
-                </TableRow>
 
                 <TableRow android:padding="@dimen/row_padding">
 
@@ -238,25 +223,18 @@
                         android:textSize="@dimen/val_label_size" />
                 </TableRow>
 
-                <TableRow android:padding="@dimen/row_padding">
+                <TableRow
+                    android:padding="@dimen/row_padding"
+                    android:layout_marginLeft="@dimen/padding16">
 
                     <Spinner
                         android:id="@+id/choose_weapon_two"
                         style="@style/spinnerMainStyle" />
                 </TableRow>
 
-                <TableRow android:padding="@dimen/row_padding">
-
-                    <TextView
-                        android:text="@string/weapon_name"
-                        style="@style/textViewStyle" />
-
-                    <TextView
-                        android:id="@+id/val_weapon_name_two"
-                        style="@style/valTextViewStyle" />
-                </TableRow>
-
-                <TableRow android:padding="@dimen/row_padding">
+                <TableRow
+                    android:padding="@dimen/row_padding"
+                    android:layout_marginLeft="@dimen/padding16">
 
                     <TextView
                         android:text="@string/weapon_type"
@@ -267,7 +245,9 @@
                         style="@style/valTextViewStyle" />
                 </TableRow>
 
-                <TableRow android:padding="@dimen/row_padding">
+                <TableRow
+                    android:padding="@dimen/row_padding"
+                    android:layout_marginLeft="@dimen/padding16">
 
                     <TextView
                         android:text="@string/weapon_quality"
@@ -278,7 +258,9 @@
                         style="@style/valTextViewStyle" />
                 </TableRow>
 
-                <TableRow android:padding="@dimen/row_padding">
+                <TableRow
+                    android:padding="@dimen/row_padding"
+                    android:layout_marginLeft="@dimen/padding16">
 
                     <TextView
                         android:text="@string/weapon_physic_damage"
@@ -289,7 +271,9 @@
                         style="@style/valTextViewStyle" />
                 </TableRow>
 
-                <TableRow android:padding="@dimen/row_padding">
+                <TableRow
+                    android:padding="@dimen/row_padding"
+                    android:layout_marginLeft="@dimen/padding16">
 
                     <TextView
                         android:text="@string/weapon_magic_damage"

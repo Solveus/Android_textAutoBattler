@@ -17,7 +17,7 @@
     <string name="choose_character_one">Select first character:</string>
     <string name="choose_character_two">Select second character:</string>
     <string name="choose_weapon_one">Select weapon player\'s one:</string>
-    <string name="choose_weapon_two">Select player\'s two:</string>
+    <string name="choose_weapon_two">Select weapon player\'s two:</string>
     <string name="weapon_name">Weapon name:</string>
     <string name="weapon_quality">Weapon quality:</string>
     <string name="weapon_type">Weapon type:</string>
@@ -61,5 +61,6 @@
     <string name="delay_label">Delay</string>
     <string name="about_content">Author: solveus_666 (Solveus)</string>
     <string name="github_link">https://github.com/Solveus</string>
+    <string name="ok">OK</string>
 
 </resources>
